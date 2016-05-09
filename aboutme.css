@@ -8,7 +8,7 @@ html, body, header, section, footer, p, h1, h2, ul, li, a {
     box-sizing: border-box;
 }
 body {
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Amiri', serif;
 }
 *, *::before, *::after {
   box-sizing: inherit;
@@ -22,34 +22,32 @@ ul {
     background-image: url('//i.imgur.com/PYoHFEU.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: solid 24px #FFCF33;
+    border-top: solid 24px #FFC107;
     padding: 6rem 0;
     margin-bottom: -2rem;
 }
 .masthead-intro {
-    color: #ff6600;
+    color: #FFF8E1;
     /*Typography Declaration*/
-    font-family: "Gentium Book Basic", Georgia, serif;
+    font-family: 'Cinzel Decorative', cursive;
     font-size: 2.5rem;
     margin-bottom: 0.1rem;
     text-align: center;
-    text-shadow: 2px 2px 2px red;
+    text-shadow: 2px 2px 2px #FFC107;
 }
 .masthead-heading{
     /*Round Border*/
-    -webkit-border-radius: 50px 15px;
-    -moz-border-radius: 50px 15px;
     border-radius: 50px 15px;
-    background-color: #ffffcc;
-    border: 5px solid #FFCF33;
-    color: #996600;
+    background-color: #FFF8E1;
+    border: 5px solid #FFD54F;
+    color: #FF6F00;
     /*Typography Declaration*/
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
     font-size: 6rem;
     font-style: italic;
     font-weight: bold;
     letter-spacing: -0.02rem;
-    max-width: 20rem;
+    max-width: 21.5rem;
     margin-top: -0.05rem;
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +64,7 @@ ul {
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    border: 12px solid #FFCF33;
+    border: 12px solid #FFC107;
     font-size: 1rem;
     /*Layout*/
     max-width: 60rem;
@@ -85,7 +83,7 @@ section > p {
     margin-top: 1.2rem;
 }
 .questions-section > h2 {
-    color: #A6790E;
+    color: #FF6F00;
     font-size: 1.2rem;
     font-weight: bold;
     /*Layout*/
@@ -96,14 +94,14 @@ section > p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
-    border-bottom: solid 24px #FFCF33;
+    border-bottom: solid 24px #FFC107;
     font-size: 1.25rem;
     padding: 1.5rem;
     text-align: center;
     font-weight: 300;
 }
 .content-footer > p {/*should in .content-footer>p or .content-footer?*/
-    color: white;
+    color: #FFF8E1;
     letter-spacing: 0.05rem;
 }
 .social {
@@ -115,7 +113,7 @@ section > p {
     -webkit-border-radius; 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 3px solid white;
+    border: 3px solid #FFF8E1;
     display: inline-flex;
     justify-content: center;
     /*List Width Height and Margin*/
@@ -134,13 +132,13 @@ a.link-coverImage {
     color: white;
 }
 a:visited {
-  color: purple;
+  color: #FF6F00;
 }
 a:hover {
-  color: white;
+  color: #FFECB3;
 }
 a.favorite-music:hover {
-  color: red;
+  color: #FFAB00;
 }
 @media only screen and (max-width: 500px) {
     .masthead {
