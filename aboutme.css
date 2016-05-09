@@ -1,25 +1,37 @@
-body {
-  /* Typography Declarations*/
-  color: #222222;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  background-image: url("http://i.imgur.com/PYoHFEU.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+html, body, header, section, footer, p, h1, h2, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
+body {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+ul {
+    list-style-type: none;
+}
+
 .masthead {
     /*Background Image*/
-    /*background-image: url('http://i.imgur.com/PYoHFEU.jpg');
+    background-image: url('//i.imgur.com/PYoHFEU.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: solid 24px #FFCF33;*/
-    padding: 6em 0;
+    border-top: solid 24px #FFCF33;
+    padding: 6rem 0;
+    margin-bottom: -2rem;
 }
 .masthead-intro {
     color: #ff6600;
     /*Typography Declaration*/
     font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-    margin-bottom: 0.1em;
+    font-size: 2.5rem;
+    margin-bottom: 0.1rem;
     text-align: center;
     text-shadow: 2px 2px 2px red;
 }
@@ -33,12 +45,12 @@ body {
     color: #996600;
     /*Typography Declaration*/
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 6em;
+    font-size: 6rem;
     font-style: italic;
     font-weight: bold;
-    letter-spacing: -0.02em;
-    max-width: 4em;
-    margin-top: -0.05em;
+    letter-spacing: -0.02rem;
+    max-width: 20rem;
+    margin-top: -0.05rem;
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
@@ -55,49 +67,62 @@ body {
     -moz-border-radius: 25px;
     border-radius: 25px;
     border: 12px solid #FFCF33;
-    font-size: 110%;
+    font-size: 1rem;
     /*Layout*/
-    max-width: 60em;
+    max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 2rem;
     padding: 1em;
     text-align: justify;
 }
 section > h1 {
-    font-size: 150%;
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 300;
 }
 section > p {
-    margin-top: 2em;
+    margin-top: 1.2rem;
 }
 .questions-section > h2 {
     color: #A6790E;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
     /*Layout*/
-    margin: 2em 0 1em 0;
+    margin: 2rem 0 1rem 0;
 }
 .content-footer {
-    /*background-image: url('http://i.imgur.com/PYoHFEU.jpg');
+    background-image: url('//i.imgur.com/PYoHFEU.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
-    border-bottom: solid 24px #FFCF33;*/
-    color: #FFCF33;
-    font-weight: 300;
-    letter-spacing: 0.05em;
+    border-bottom: solid 24px #FFCF33;
+    font-size: 1.25rem;
+    padding: 1.5rem;
     text-align: center;
+    font-weight: 300;
+}
+.content-footer > p {/*should in .content-footer>p or .content-footer?*/
+    color: white;
+    letter-spacing: 0.05rem;
+}
+.social {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 .social > li {
     -webkit-border-radius; 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 3px solid #73AD21;
-    display: inline-block;
+    border: 3px solid white;
+    display: inline-flex;
+    justify-content: center;
     /*List Width Height and Margin*/
-    width: 150px;
-    height: 20px;
-    margin: 10px;
+    width: 7rem;
+    height: auto;
+    padding: 0.1rem;
+    margin: 0.1rem;
 }
 a.favorite-music {
   color: blue;
@@ -116,4 +141,20 @@ a:hover {
 }
 a.favorite-music:hover {
   color: red;
+}
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-device-width: 980px) {
+    .social > li {
+        width: 12rem;
+    }
+    a.link-list {
+        font-size: 2.2rem;
+    }
 }
